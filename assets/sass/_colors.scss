@@ -1,0 +1,21 @@
+$yellowColor: #feb934;
+$orangeColor: #ea8125;
+$darkColor: #202020;
+
+
+body {
+	background-color: $darkColor;  
+}
+
+#description .text {
+	color: $yellowColor;
+}
+
+#description .text .highlight {
+	color: $orangeColor;	
+	border-bottom:2px solid $orangeColor;
+}
+
+#typed-cursor{
+	display: none;
+}
