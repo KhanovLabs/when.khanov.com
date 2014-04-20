@@ -67,25 +67,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 6, ../sass/_colors.scss */
+/* line 8, ../sass/_colors.scss */
 body {
   background-color: #202020;
 }
 
-/* line 10, ../sass/_colors.scss */
+/* line 12, ../sass/_colors.scss */
 #description .text {
   color: #feb934;
 }
 
-/* line 14, ../sass/_colors.scss */
+/* line 16, ../sass/_colors.scss */
 #description .text .highlight {
   color: #ea8125;
   border-bottom: 2px solid #ea8125;
 }
 
-/* line 19, ../sass/_colors.scss */
+/* line 21, ../sass/_colors.scss */
 #typed-cursor {
   display: none;
+}
+
+/* line 25, ../sass/_colors.scss */
+.developer, .developer a {
+  color: #666666;
+  text-decoration: none;
+}
+
+/* line 30, ../sass/_colors.scss */
+.developer a:hover {
+  color: #aaaaaa;
+  text-decoration: none;
 }
 
 /* line 1, ../sass/_fonts.scss */
@@ -105,17 +117,22 @@ body {
   font-size: 45px;
 }
 
-/* line 4, ../sass/_layout.scss */
+/* line 15, ../sass/_fonts.scss */
+.developer {
+  font-size: 13px;
+}
+
+/* line 11, ../sass/_layout.scss */
 html {
   height: 100%;
 }
 
-/* line 7, ../sass/_layout.scss */
+/* line 15, ../sass/_layout.scss */
 body {
   min-height: 100%;
 }
 
-/* line 11, ../sass/_layout.scss */
+/* line 19, ../sass/_layout.scss */
 #description {
   width: 500px;
   height: 400px;
@@ -128,10 +145,41 @@ body {
   margin-left: 80px;
 }
 
-/* line 23, ../sass/_layout.scss */
+/* line 31, ../sass/_layout.scss */
 .highlight {
   width: 480px;
   height: 55px;
   float: left;
   padding-bottom: 3px;
+}
+
+/* line 38, ../sass/_layout.scss */
+.badge {
+  text-align: center;
+}
+
+/* line 42, ../sass/_layout.scss */
+.badge img {
+  margin-top: 50px;
+  width: 200px;
+}
+
+/* line 47, ../sass/_layout.scss */
+#hero-image {
+  width: 100%;
+  text-align: center;
+}
+
+/* line 52, ../sass/_layout.scss */
+#devices {
+  width: 650px;
+  height: 705px;
+  padding-top: 20px;
+  padding-left: 600px;
+}
+
+/* line 59, ../sass/_layout.scss */
+footer {
+  text-align: center;
+  margin-top: -10px;
 }

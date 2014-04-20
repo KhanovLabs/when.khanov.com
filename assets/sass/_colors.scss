@@ -1,6 +1,8 @@
 $yellowColor: #feb934;
 $orangeColor: #ea8125;
 $darkColor: #202020;
+$developerTextColor: #666;
+$developerTextHoverColor: #AAA;
 
 
 body {
@@ -18,4 +20,14 @@ body {
 
 #typed-cursor{
 	display: none;
+}
+
+.developer, .developer a {
+	color: $developerTextColor;
+	text-decoration: none;
+}
+
+.developer a:hover {
+	color: $developerTextHoverColor;
+	text-decoration: none;
 }

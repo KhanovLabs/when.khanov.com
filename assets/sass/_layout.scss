@@ -1,15 +1,23 @@
 @import 'compass/css3';
 @import "compass/layout";
 
+$descriptionTextWidth: 500px;
+$descriptionTextLeftMargin: 80px;
+
+$devicesPhotoWidth: 650px;
+$devicesPhotoHeight: 705px;
+$devicesPhotoTopPadding: 20px;
+
 html{
 	height: 100%;
 }
+
 body {
 	min-height: 100%;
 }
 
 #description {
-	width: 500px;
+	width: $descriptionTextWidth;
 	height: 400px;
 	position:absolute; 
 	top:0; 
@@ -17,7 +25,7 @@ body {
 	left:0; 
 	right:0;
 	margin:auto;
-	margin-left: 80px;
+	margin-left: $descriptionTextLeftMargin;
 }
 
 .highlight {
@@ -25,4 +33,30 @@ body {
 	height: 55px;
 	float: left;
 	padding-bottom: 3px;
+}
+
+.badge {
+	text-align: center;
+}
+
+.badge img {
+	margin-top: 50px;
+	width: 200px;
+}
+
+#hero-image {
+	width: 100%;
+	text-align: center;
+}
+
+#devices {
+	width: $devicesPhotoWidth;
+	height: $devicesPhotoHeight;
+	padding-top: $devicesPhotoTopPadding;
+	padding-left: $descriptionTextWidth + $descriptionTextLeftMargin + 20;
+}
+
+footer {
+	text-align: center;
+	margin-top: -10px;
 }

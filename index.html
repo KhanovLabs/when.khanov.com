@@ -25,6 +25,8 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
 	
+	<meta name="apple-itunes-app" content="app-id=854494573"/>
+	
 	<meta property="twitter:creator" content="@khanov">
 	<meta name="description" content="When — Event Countdown for iOS">
 	
@@ -39,11 +41,12 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="/assets/javascripts/typed.js"></script>
 	<script>
-	  $(function(){
+	  $(document).ready(function(){
 	      $(".highlight").typed({
-	        strings: ["trip to San Francisco", "next Christmas", "graduation", "Steve's Birthday", "live concert", "assignment due", "job interview", "computer science exam", "podcast recording", "vacation in Japan", "your next marathon"],
+	        strings: ["trip to San Francisco", "next Christmas", "graduation from college", "Steve's Birthday", "live concert", "assignment due", "job interview", "computer science exam", "podcast recording", "vacation in Japan", "your next marathon"],
 	        typeSpeed: 30, // typing speed
 			backDelay: 500, // pause before backspacing
+			loop: true
 	      });
 	  });
 	</script>
@@ -51,12 +54,18 @@
 
 <body>
 
-
 <section id="description">
 	<div class="text">The easiest way to know<br> how much time left until<br> <div class="highlight"></div></div>
+	<div class="badge"><a href="https://itunes.apple.com/us/app/when-event-countdown/id854494573?mt=8"><img src="/assets/images/app-store-badge.svg" alt="Download on the App Store"></a></div>
 </section>
 
+<section id="hero-image">
+	<img id="devices" src="/assets/images/hero.png" alt="When — Event Countdown for iOS">
+</section>
 
+<footer>
+	<section class="developer">Created by <a href="http://khanov.me">Salavat Khanov</a></section>
+</footer>
 
 </body>
 </html>
