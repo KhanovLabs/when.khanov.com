@@ -15,3 +15,14 @@ body {
 .developer {
 	font-size: 13px;
 }
+
+/* iPhone 2G, 3G, 4, 4S, 5, 5s */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) { 
+	
+	#description .text {
+		font-size: 27px;
+	}
+}

@@ -2,7 +2,15 @@
 @import "compass/layout";
 
 $descriptionTextWidth: 500px;
+$descriptionTextHeight: 400px;
+
 $descriptionTextLeftMargin: 80px;
+$descriptionTextLeftMarginiPad: auto;
+$descriptionTextTopMarginiPad: 30px;
+
+$descriptionTextWidthiPhone: 300px;
+$descriptionTextLeftMarginiPhone: auto;
+$descriptionTextTopMarginiPhone: 30px;
 
 $devicesPhotoWidth: 650px;
 $devicesPhotoHeight: 705px;
@@ -18,7 +26,7 @@ body {
 
 #description {
 	width: $descriptionTextWidth;
-	height: 400px;
+	height: $descriptionTextHeight;
 	position:absolute; 
 	top:0; 
 	bottom:0; 
@@ -29,7 +37,7 @@ body {
 }
 
 .highlight {
-	width: 480px;
+	width: $descriptionTextWidth;
 	height: 55px;
 	float: left;
 	padding-bottom: 3px;
@@ -59,4 +67,67 @@ body {
 footer {
 	text-align: center;
 	margin-top: -10px;
+}
+
+
+/* iPad in portrait & landscape (all generations - including iPad mini) */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+	
+	#description {
+		margin-left: $descriptionTextLeftMarginiPad;
+		margin-top: $descriptionTextTopMarginiPad;
+	}
+	
+	#devices {
+		padding-top: $descriptionTextTopMarginiPad + $descriptionTextHeight - 90px;
+		padding-left: 20px;
+	}
+	
+	section.developer {
+		height: 40px;
+	}
+}
+
+
+/* iPhone 2G, 3G, 4, 4S, 5, 5s */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) { 
+	
+	#description {
+		width: $descriptionTextWidthiPhone;
+		height: $descriptionTextHeight;
+		margin-left: $descriptionTextLeftMarginiPhone;
+		margin-top: $descriptionTextTopMarginiPhone;
+	}
+	
+	.highlight {
+		width: $descriptionTextWidthiPhone;
+		height: 35px;
+	}
+	
+	#devices {
+		padding-top: $descriptionTextTopMarginiPhone + $descriptionTextHeight - 150px;
+		padding-left: 20px;
+		width: 92%;
+		height: auto;
+	}
+	
+	footer {
+		margin-top: 0;
+	}
+	
+	section.developer {
+		height: 60px;
+	}
+	
+	.support {
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+	}
 }
